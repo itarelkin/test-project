@@ -1,46 +1,72 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Text Data Processing and Visualization App
 
-## Available Scripts
+This is a simple web application built with React and TypeScript that allows users to import text data from a file, process it using the TextRazor API for Named Entity Recognition, and visualize the results with graphs and entity highlighting.
 
-In the project directory, you can run:
+## Technologies Used
 
-### `npm start`
+- React
+- TypeScript
+- [react-bootstrap](https://react-bootstrap.github.io/) for UI components
+- [recharts](https://recharts.org/en-US) for graph visualization
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Clone the repository:
 
-### `npm test`
+   ```bash
+   git clone https://github.com/your-username/text-processing-visualization-app.git
+   cd text-processing-visualization-app
+Install dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+bash
+Copy code
+npm install
+Set Up API Key:
 
-### `npm run build`
+Sign up for an account and obtain an API key from TextRazor.
+Store the API key securely in your environment variables or a configuration file.
+Set Up Proxy:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Access the CORS proxy service by visiting https://cors-anywhere.herokuapp.com/.
+Click the "Request temporary access to the demo server" button to unlock access.
+Start the development server:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm start
+Open your browser and navigate to http://localhost:3000.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Features
+Upload Text File for Analysis:
 
-### `npm run eject`
+Choose a text file to import and process.
+Each line of the text file will be sent to the TextRazor API for Named Entity Recognition.
+Entity Highlighting and Content Visualization:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Recognized entities will be highlighted in the imported text.
+Entity types (Person, Country, etc.) will be indicated through bold and underline styles.
+Entity Statistics:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Display statistics on the entities that were found in the text.
+Show a count of each entity type (Person, Country, etc.).
+Graph Analytics:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Generate graphs to visualize the distribution of entity types.
+Choose from various graph visualizations (bar chart, pie chart) to analyze the data.
+Dashboard Layout:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The user interface includes a dashboard layout for a seamless user experience.
+TextRazor API and Entity Recognition
+TextRazor is an online service for performing various operations on text, including Named Entity Recognition.
+The application utilizes the TextRazor API to recognize entities in the imported text.
+Deployment
+Deploy your application to a hosting platform of your choice (e.g., Vercel, Netlify, GitHub Pages) to make it accessible online.
+Contributions and Issues
+Contributions are welcome! If you encounter any issues or have ideas for enhancements, feel free to open an issue or submit a pull request.
 
-## Learn More
+License
+This project is licensed under the MIT License.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Feel free to copy and paste this content into your `README.md` file. Remember to replace `your-username` with your actual GitHub username and update any other URLs or project-specific details as needed.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+
